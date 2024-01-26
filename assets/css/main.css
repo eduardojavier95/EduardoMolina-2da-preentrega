@@ -1,0 +1,128 @@
+/* 
+Paleta de colores
+
+#041562 - Azul oscuro
+#11468F - Azul
+#DA1212 - Rojo
+
+*/
+
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+/* 
+    font-family: 'Roboto', sans-serif; 
+*/
+
+html {
+    font-size: 62.5%;
+    /* cambia el tamaño de la fuente a 10px */
+    /* 1rem=10px */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Cambia la fuente del texto */
+    font-size: 1.6rem;
+    /* Tamaño de la fuente */
+    padding: 16px;
+}
+
+/* Main index */
+
+/* banner */
+.banner {
+    background-image: url(../images/banner.jpg);
+    /* Ruta de la imagen */
+    height: 500px;
+    /* Altura de la imagen */
+    background-size: cover;
+    /* Ajusta la imagen al contenedor */
+    background-position: center;
+    /* Centra la imagen */
+    text-align: center;
+    /* Alinea horizontalmente el texto */
+    line-height: 40px;
+    /* Ajusta el espacio entre líneas del texto */
+    font-size: x-large;
+    /* Tamaño de la fuente */
+    color: white;
+    /* Color del texto */
+    text-shadow: -5px -5px 20px rgba(0, 0, 0, 1);
+    /* Sombra del texto */
+
+}
+
+.banner h1 {
+    margin-top: 0;
+    /* Margen superior de 0px */
+    padding-top: 100px;
+    /* Espacio interno superior de 200px */
+    font-size: 5rem;
+}
+
+
+.contenido {
+    text-align: justify;
+    /* Alinea horizontalmente el texto */
+    color: #041562;
+    /* Color del texto */
+    font-size: 1.6rem;
+    /* Tamaño de la fuente */
+    line-height: 2.5rem;
+    /* Ajusta el espacio entre líneas del texto */
+    width: 1000px;
+    margin: 32px;
+}
+
+.section-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.contacto{
+    width: auto;
+    margin: 40px;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer .footer-section {
+    margin-bottom: 20px;
+}
+
+.footer h5 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.2s;
+}
+
+.footer a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 24px;
+    transition: color 0.2s;
+}
+
+.footer .social-icons a:hover {
+    color: #ffffff;
+}
