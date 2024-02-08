@@ -29,29 +29,6 @@ body {
 
 /* Main index */
 
-/* banner */
-.banner {
-    background-image: url(../images/banner.jpg);
-    /* Ruta de la imagen */
-    height: 500px;
-    /* Altura de la imagen */
-    background-size: cover;
-    /* Ajusta la imagen al contenedor */
-    background-position: center;
-    /* Centra la imagen */
-    text-align: center;
-    /* Alinea horizontalmente el texto */
-    line-height: 40px;
-    /* Ajusta el espacio entre líneas del texto */
-    font-size: x-large;
-    /* Tamaño de la fuente */
-    color: white;
-    /* Color del texto */
-    text-shadow: -5px -5px 20px rgba(0, 0, 0, 1);
-    /* Sombra del texto */
-
-}
-
 .hero {
     background-image: url(../images/banner.jpg);
     background-size: cover;
