@@ -1,34 +1,24 @@
-/* 
-Paleta de colores
-
-#041562 - Azul oscuro
-#11468F - Azul
-#DA1212 - Rojo
-
-*/
+/* Paleta de colores */
+$azul-oscuro: #041562;
+$azul: #11468F;
+$rojo: #DA1212;
 
 /* Font */
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
-/* 
-    font-family: 'Roboto', sans-serif; 
-*/
+/* font-family: 'Roboto', sans-serif; */
 
 html {
-    font-size: 62.5%;
-    /* cambia el tamaño de la fuente a 10px */
+    font-size: 62.5%; /* cambia el tamaño de la fuente a 10px */
     /* 1rem=10px */
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    /* Cambia la fuente del texto */
-    font-size: 2rem;
-    /* Tamaño de la fuente */
+    font-family: 'Roboto', sans-serif; /* Cambia la fuente del texto */
+    font-size: 2rem; /* Tamaño de la fuente */
     padding: 16px;
 }
 
 /* Main index */
-
 .hero {
     background-image: url(../images/banner.jpg);
     background-size: cover;
@@ -42,16 +32,11 @@ body {
     padding: 50px 0;
 }
 
-
 .contenido {
-    text-align: justify;
-    /* Alinea horizontalmente el texto */
-    color: #041562;
-    /* Color del texto */
-    font-size: 1.6rem;
-    /* Tamaño de la fuente */
-    line-height: 2.5rem;
-    /* Ajusta el espacio entre líneas del texto */
+    text-align: justify; /* Alinea horizontalmente el texto */
+    color: $azul-oscuro; /* Color del texto */
+    font-size: 1.6rem; /* Tamaño de la fuente */
+    line-height: 2.5rem; /* Ajusta el espacio entre líneas del texto */
     width: 1000px;
     margin: 32px;
 }
@@ -66,7 +51,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
 .contacto {
@@ -81,12 +65,15 @@ body {
     padding: 10px 20px;
     font-size: 1.6rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s; /* Agregar transform */
+    
+    &:hover {
+        background-color: darken(#0facac, 10%);
+        transform: scale(1.05); /* Agrandar ligeramente en hover */
+    }
 }
 
-
 /* Footer */
-
 .footer {
     background-color: #343a40;
     color: white;
@@ -123,6 +110,3 @@ body {
 .footer .social-icons a:hover {
     color: #ffffff;
 }
-
-
-
